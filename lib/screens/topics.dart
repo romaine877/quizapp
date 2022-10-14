@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quizapp/screens/error.dart';
 import 'package:quizapp/screens/loading.dart';
-import 'package:quizapp/services/auth.dart';
 import 'package:quizapp/services/firestore.dart';
 import 'package:quizapp/shared/bottom_nav.dart';
 
