@@ -23,11 +23,10 @@ class BottomNavBar extends StatelessWidget {
         ),
       ],
       onTap: (int index) {
-       
         switch (index) {
           case 0:
             Navigator.pushNamed(context, '/profile');
-            
+
             break;
           case 1:
             break;

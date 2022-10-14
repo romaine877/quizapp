@@ -26,7 +26,11 @@ class TopicsScreen extends StatelessWidget {
                 physics: const BouncingScrollPhysics(),
                 crossAxisCount: 2,
                 primary: true,
-                children: topics.map((e) => Card(child: Text(e.title),)).toList(),
+                children: topics
+                    .map((e) => Card(
+                          child: Text(e.title),
+                        ))
+                    .toList(),
               ),
               bottomNavigationBar: const BottomNavBar(),
             );

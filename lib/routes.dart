@@ -1,5 +1,3 @@
-
-
 import 'package:quizapp/screens/about.dart';
 import 'package:quizapp/screens/home.dart';
 import 'package:quizapp/screens/login.dart';

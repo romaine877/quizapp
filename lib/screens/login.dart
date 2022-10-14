@@ -13,29 +13,25 @@ class LoginScreen extends StatelessWidget {
         title: const Text('Login'),
       ),
       body: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: <Widget>[
-        
-        const FlutterLogo(
-          size: 100,
-        ),
-        LoginButton(
-          icon: FontAwesomeIcons.accessibleIcon,
-          color: Colors.blue,
-          text: 'Login',
-          loginMethod: AuthService().anonSignIn,
-        ),
-        LoginButton(
-          icon: FontAwesomeIcons.google,
-          color: Colors.indigo,
-          text: 'Login',
-          loginMethod: AuthService().googleSignIn,
-        ),
-        
-      ]),
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            const FlutterLogo(
+              size: 100,
+            ),
+            LoginButton(
+              icon: FontAwesomeIcons.accessibleIcon,
+              color: Colors.blue,
+              text: 'Login',
+              loginMethod: AuthService().anonSignIn,
+            ),
+            LoginButton(
+              icon: FontAwesomeIcons.google,
+              color: Colors.indigo,
+              text: 'Login',
+              loginMethod: AuthService().googleSignIn,
+            ),
+          ]),
     );
   }
 }
-
-

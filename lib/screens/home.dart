@@ -3,8 +3,6 @@ import 'package:quizapp/screens/login.dart';
 import 'package:quizapp/screens/topics.dart';
 import 'package:quizapp/services/auth.dart';
 
-
-
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 

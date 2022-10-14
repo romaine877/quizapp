@@ -6,7 +6,6 @@ class AuthService {
   final user = FirebaseAuth.instance.currentUser;
 
   Future<void> anonSignIn() async {
-   
     try {
       await FirebaseAuth.instance.signInAnonymously();
     } on FirebaseAuthException catch (e) {
@@ -18,7 +17,7 @@ class AuthService {
   Future<void> googleSignIn() async {
     try {
       final googleUser = await GoogleSignIn().signIn();
-      
+
       if (googleUser == null) return;
 
       final googleAuth = await googleUser.authentication;

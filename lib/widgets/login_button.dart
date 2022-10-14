@@ -20,7 +20,6 @@ class LoginButton extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: 20),
       child: ElevatedButton.icon(
         onPressed: () {
-          
           loginMethod();
         },
         icon: Icon(
