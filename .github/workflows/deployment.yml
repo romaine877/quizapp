@@ -42,7 +42,7 @@ jobs:
     # Upload generated apk to the artifacts.
     - uses: ncipollo/release-action@v1
       with:
-        artifacts: "build/app/outputs/apk/debug/*"
+        artifacts: "build/app/outputs/apk/release/*.apk"
         commit: live
         tag: v1.0.${{ github.run_number }}
         token: ${{ secrets.QZ_TOKEN }}
