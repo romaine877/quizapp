@@ -44,5 +44,5 @@ jobs:
       with:
         artifacts: "build/app/outputs/apk/debug/*"
         commit: live
-        tag: v1.0.${{ github.run.number }}
+        tag: v1.0.${{ github.run_number }}
         token: ${{ secrets.QZ_TOKEN }}
